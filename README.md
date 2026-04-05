@@ -19,6 +19,12 @@ git clone --recursive https://github.com/MichaelGNielsen/Job-Application-Workspa
 cd Job-Application-Workspace-Template
 ```
 
+### Hvis du har glemt `--recursive` ved clone:
+Hvis du allerede har klonet mappen, men den er tom, skal du køre:
+```bash
+git submodule update --init --recursive
+```
+
 ### Start Systemet
 Vi har samlet opstarten af både de lokale AI-servere og selve applikationen i ét simpelt script:
 
