@@ -1,0 +1,9 @@
+[submodule "template"]
+	path = template
+	url = https://github.com/MichaelGNielsen/Job-Application-Agent-Template.git
+[submodule "ollama-server"]
+	path = ollama-server
+	url = https://github.com/MichaelGNielsen/ollama-server.git
+[submodule "opencode-server"]
+	path = opencode-server
+	url = https://github.com/MichaelGNielsen/opencode-server.git
