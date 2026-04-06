@@ -37,9 +37,11 @@ Vi har samlet opstarten af både de lokale AI-servere og selve applikationen i �
 ```
 
 Scriptet vil:
-1. Starte `ollama-server` (Port 11435).
-2. Starte `opencode-server` (Port 4097).
+1. Starte `ollama-server` (Port 11434).
+2. Starte `opencode-server` (Port 4096).
 3. Starte `template` (Agenten) via Docker Compose (Port 3000 & 3002).
+
+> **Hvorfor standard-porte?** Vi har nu konfigureret systemet til at bruge standard-portene 11434 (Ollama) og 4096 (OpenCode). Dette gør det muligt for systemet at fungere uden konfiguration i Docker, så længe man blot sørger for ikke at have to servere kørende på samme port på værtsmaskinen samtidigt.
 
 > **Bemærk (Gemini AI):** For at undgå API Rate Limits (GDPR) på Gemini, låner Docker-containeren dine host-credentials. Husk derfor at køre `gemini login` i din terminal, før du starter systemet. For mere information om Gemini AI, se [Google AI Platform](https://ai.google.dev/).
 
