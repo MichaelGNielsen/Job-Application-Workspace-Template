@@ -7,10 +7,10 @@ echo "==========================================="
 echo "🤖 Starter Job Application Workspace (Template - Tintin)"
 echo "==========================================="
 
-echo "🚀 Starter Ollama Server (Port 11435)..."
+echo "🚀 Starter Ollama Server (Port 11434)..."
 cd "$DIR/ollama-server" && docker compose up -d
 
-echo "🚀 Starter OpenCode Server (Port 4097)..."
+echo "🚀 Starter OpenCode Server (Port 4096)..."
 cd "$DIR/opencode-server" && docker compose up -d
 
 echo "🚀 Starter Job Application Agent (Port 3000 & 3002)..."
