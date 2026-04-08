@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/ingydotnet/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/MichaelGNielsen/ollama-server.git
+	branch = master
+	commit = 2f8aeea321e58ec24fb25d3b879c998efb945400
+	parent = c8ffb25b364eab81566b5fc2db2f0f939461ec35
+	method = merge
+	cmdver = 0.4.9
