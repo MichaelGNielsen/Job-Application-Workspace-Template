@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/ingydotnet/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/MichaelGNielsen/Job-Application-Agent-Template.git
+	branch = main
+	commit = 5788acd49b263c78e577b20e8b4505b0e96ed98f
+	parent = 42582115b15fd8100b4fa115685535f55a7cc044
+	method = merge
+	cmdver = 0.4.9

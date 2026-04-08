@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <title>CV - {{BRUGER_NAVN}}</title>
+    <style>
+        @page { size: A4; margin: 1.2cm; }
+        @media print {
+            .print-btn { display: none !important; }
+            body { padding: 0; margin: 0; font-size: 10pt; }
+        }
+        body { 
+            font-family: "Segoe UI", "Calibri", Arial, sans-serif; 
+            color: #2c3e50; 
+            line-height: 1.3; 
+            max-width: 850px; 
+            margin: 0 auto; 
+            padding: 30px;
+            background-color: white;
+        }
+        header { 
+            border-bottom: 2px solid #34495e; 
+            padding-bottom: 10px; 
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        .contact-info h1 { 
+            margin: 0; 
+            font-size: 1.6em; 
+            color: #2c3e50; 
+            text-transform: uppercase; 
+            letter-spacing: 1px;
+            font-weight: 800;
+        }
+        .contact-info p { 
+            margin: 1px 0; 
+            font-size: 0.85em; 
+            color: #555;
+        }
+        .address-date-line {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin: 1px 0;
+            width: 100%;
+        }
+        
+        .content { min-height: 600px; }
+        
+        h1, h2, h3 { color: #2c3e50; margin-top: 1.2em; margin-bottom: 0.4em; }
+        h1 { font-size: 1.4em; border-bottom: 1px solid #eee; padding-bottom: 3px; }
+        h2 { font-size: 1.15em; color: #34495e; border-left: 3px solid #34495e; padding-left: 8px; text-transform: uppercase; }
+        h3 { font-size: 1.05em; font-weight: bold; }
+        
+        p { margin-bottom: 8px; }
+        ul { margin-bottom: 10px; padding-left: 18px; }
+        li { margin-bottom: 3px; }
+        
+        /* CV specifikke elementer */
+        .experience-item { margin-bottom: 15px; }
+        .date-location { font-style: italic; color: #7f8c8d; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="contact-info">
+            <h1>{{BRUGER_NAVN}}</h1>
+            {{BRUGER_ADRESSE_BLOK}}
+            <p>{{BRUGER_TLF}} | {{BRUGER_EMAIL}}</p>
+        </div>
+    </header>
+
+    <div class="content">
+        {{CONTENT}}
+    </div>
+</body>
+</html>
