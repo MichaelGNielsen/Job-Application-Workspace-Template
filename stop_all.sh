@@ -4,20 +4,11 @@
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 echo "==============================================="
-echo "🧹 Stopper Job Application Workspace (Cleanup)"
+echo "🧹 Stopper Job Application Workspace (Template)"
 echo "==============================================="
 
-# Tjekker hvilken agent-mappe der findes (mgn eller template)
-if [ -d "$DIR/mgn" ]; then
-    AGENT_DIR="mgn"
-elif [ -d "$DIR/template" ]; then
-    AGENT_DIR="template"
-fi
-
-echo "🛑 Stopper Job Application Agent ($AGENT_DIR)..."
-if [ -n "$AGENT_DIR" ]; then
-    cd "$DIR/$AGENT_DIR" && docker compose down
-fi
+echo "🛑 Stopper Job Application Agent (Template)..."
+cd "$DIR/template" && docker compose down
 
 echo "🛑 Stopper OpenCode Server..."
 cd "$DIR/opencode-server" && docker compose down
