@@ -6,7 +6,7 @@
 [subrepo]
 	remote = https://github.com/MichaelGNielsen/opencode-server.git
 	branch = main
-	commit = c00590cf1eb20101678bff49a673c1c364a651cd
-	parent = ab8de5565776a9386c9e3554cda4606db1cc1156
+	commit = fd5f475c5a0a3d08d7cece03f18dc14214bd88a7
+	parent = bb42d5d5c2b3f94563e61f3e917e761a40fa9ec0
 	method = merge
 	cmdver = 0.4.9
