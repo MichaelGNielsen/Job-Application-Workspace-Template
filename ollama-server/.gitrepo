@@ -6,7 +6,7 @@
 [subrepo]
 	remote = https://github.com/MichaelGNielsen/ollama-server.git
 	branch = master
-	commit = 2f8aeea321e58ec24fb25d3b879c998efb945400
-	parent = c8ffb25b364eab81566b5fc2db2f0f939461ec35
+	commit = 5ad6cb358e52fde83abf3af3b8123fa526a700e5
+	parent = a45142e453cdb0c4cdee8793ad44e1c5439a58cc
 	method = merge
 	cmdver = 0.4.9
