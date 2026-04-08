@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/ingydotnet/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/MichaelGNielsen/opencode-server.git
+	branch = main
+	commit = c00590cf1eb20101678bff49a673c1c364a651cd
+	parent = ab8de5565776a9386c9e3554cda4606db1cc1156
+	method = merge
+	cmdver = 0.4.9

@@ -1,0 +1,13 @@
+services:
+  opencode:
+    image: ghcr.io/anomalyco/opencode:latest
+    container_name: opencode-server
+    ports:
+      # Tilbage til standard port
+      - "4096:4096"
+    volumes:
+      # Giver OpenCode adgang til rodbiblioteket, hvor alle projekter ligger
+      - ../:/workspace
+    # Kører headless server, bundet til 0.0.0.0 (alle netværk), så den kan nås af andre containere via host
+    command: serve --port 4096 --hostname 0.0.0.0
+    restart: unless-stopped
